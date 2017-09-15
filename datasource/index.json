@@ -1,0 +1,40 @@
+{
+	"stories": [
+		{
+			"bgVideo": "dodo-bg.jpg",
+			"linkVideo": "#",
+			"logo": "dodo-logo.png",
+			"widthLogo": "102",
+			"heightLogo": "45",
+			"title": "Dodo Pizza",
+			"text": "Главный продукт компании&nbsp;&mdash; франшиза, ядром которой является собственная информационная система Dodo&nbsp;IS, расположенная в&nbsp;облаке Microsoft Azure."
+		},
+		{
+			"bgVideo": "azure-bg.jpg",
+			"linkVideo": "#",
+			"logo": "azure-logo.png",
+			"widthLogo": "138",
+			"heightLogo": "17",
+			"title": "Iceberg",
+			"text": "Российское решение iceberg.hockey, реализованное на&nbsp;платформе Microsoft Azure, позволяет сделать управление хоккейными клубами более эффективным."
+		},
+		{
+			"bgVideo": "websoft-bg.jpg",
+			"linkVideo": "#",
+			"logo": "websoft-logo.png",
+			"widthLogo": "86",
+			"heightLogo": "36",
+			"title": "Websoft",
+			"text": "Как разгрузить HR? Какие процессы просто требуют автоматизации? Зачем тратить время на&nbsp;задачи, которые решаются сами с&nbsp;помощью WebTutor?"
+		},
+		{
+			"bgVideo": "bright-box-bg.jpg",
+			"linkVideo": "#",
+			"logo": "bright-box-logo.png",
+			"widthLogo": "121",
+			"heightLogo": "34",
+			"title": "Remoto",
+			"text": "Водители нашли отличное решение для автозапуска автомобиля. Помимо этого получили возможность найти автомобиль около гипермаркета."
+		}
+	]
+}

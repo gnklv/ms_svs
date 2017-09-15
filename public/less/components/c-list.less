@@ -1,0 +1,17 @@
+.c-list {
+
+	&__item {
+		position: relative;
+		margin-bottom: 10px;
+		padding-left: 25px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 11px;
+			.circle(5px);
+			background-color: @color-bg;
+		}
+	}
+}
