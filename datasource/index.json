@@ -35,6 +35,73 @@
 			"heightLogo": "34",
 			"title": "Remoto",
 			"text": "Водители нашли отличное решение для автозапуска автомобиля. Помимо этого получили возможность найти автомобиль около гипермаркета."
+		},
+		{
+			"bgVideo": "element-bg.jpg",
+			"linkVideo": "#",
+			"logo": "element-logo.png",
+			"widthLogo": "152",
+			"heightLogo": "56",
+			"title": "&laquo;Элемент&raquo;",
+			"text": "Контроль технического состояния, дистационное управление, умное страхование, защита автомобиля от&nbsp;угона и&nbsp;многое другое доступно водителям."
+		}
+	],
+	"scenaries": [
+		{
+			"logo": "bigdata-bg.png",
+			"widthLogo": "142",
+			"heightLogo": "103",
+			"title": "Big Data",
+			"text": "Масштабируемые сервисы для хранения больших объемов данных и&nbsp;их&nbsp;анализа с&nbsp;помощью машинного обучения и&nbsp;инструментариев Hadoop, Spark и&nbsp;Data Lake Analytics.",
+			"linkHref": "#"
+		},
+		{
+			"logo": "analytics-bg.png",
+			"widthLogo": "110",
+			"heightLogo": "104",
+			"title": "Business Analytics",
+			"text": "Сервисы современной бизнес-аналитики Microsoft для создания&nbsp;ИТ решений, связанных со&nbsp;сбором, обработкой, анализом и&nbsp;визуализацией данных",
+			"linkHref": "#"
+		},
+		{
+			"logo": "vm-bg.png",
+			"widthLogo": "128",
+			"heightLogo": "102",
+			"title": "High Performance Computer",
+			"text": "Неограниченные ресурсы для масштабирования задач, связанных с&nbsp;высокопроизводительными вычислениями: большие объемы данных, симулирование, финансовое моделирование и&nbsp;др.",
+			"linkHref": "#"
+		},
+		{
+			"logo": "intelligence-bg.png",
+			"widthLogo": "150",
+			"heightLogo": "89",
+			"title": "Artifical Intelligence",
+			"text": "Используйте алгоритмы искусственного интеллекта для распознования и анализа изображений, видео, речи в ваших приложениях для разных платформ (Windows, iOS, Android)",
+			"linkHref": "#"
+		},
+		{
+			"logo": "iot-bg.png",
+			"widthLogo": "105",
+			"heightLogo": "104",
+			"title": "Internet of&nbsp;Things",
+			"text": "Удобные инструменты для подключения &laquo;умных&raquo; устройств, безопасной передачи и&nbsp;обработки данных.",
+			"linkHref": "#"
+		},
+		{
+			"logo": "microservices-bg.png",
+			"widthLogo": "137",
+			"heightLogo": "101",
+			"title": "Microservices",
+			"text": "Создавайте масштабируемые и&nbsp;легко управляемые приложения с&nbsp;помощью Zure Service Fabric и&nbsp;open source оркестраторов Azure Container Services",
+			"linkHref": "#"
+		},
+		{
+			"logo": "azure-bg.png",
+			"widthLogo": "108",
+			"heightLogo": "108",
+			"title": "Dev &amp;&nbsp;Test",
+			"text": "Кроссплатформенные инструменты для разработки, тестирования, внедрения и&nbsp;сопровождения приложений.",
+			"linkHref": "#"
 		}
 	]
 }

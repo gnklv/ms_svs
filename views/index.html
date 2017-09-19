@@ -147,29 +147,90 @@
 			</div>
 		</section>
 		
-		<section class="l-section l-section--white" style="background-color: #f6f6f6;">
+		<section class="l-section l-section--white c-stories" style="background-color: #f6f6f6;">
 			<div class="l-container">
 				<h2 class="c-title">Истории успеха</h2>
-				<div class="c-slider">
-					{%- for item in index.stories %}
-					<div class="c-slider__item">
-						<a href="{{ item.link-video }}" class="c-slider__video" style="background-image: url({{ item.bgVideo | img_asset }})">
-							<span></span>
-						</a>
-						<div class="c-slider__logo l-flex">
-							<img src="{{ item.logo | img_asset }}" width="{{ item.widthLogo }}" height="{{ item.heightLogo }}" alt="">
+				<div class="c-slider__wrapper">
+					<div class="c-slider">
+						{%- for item in index.stories %}
+						<div class="c-slider__item">
+							<a href="{{ item.linkVideo }}" class="c-slider__video" style="background-image: url({{ item.bgVideo | img_asset }})">
+								<span></span>
+							</a>
+							<div class="c-slider__logo l-flex">
+								<img src="{{ item.logo | img_asset }}" width="{{ item.widthLogo }}" height="{{ item.heightLogo }}" alt="">
+							</div>
+							<div class="c-slider__content">
+								<p class="c-slider__title">
+									{{ item.title | safe }}
+								</p>
+								<p class="c-slider__text">
+									{{ item.text | safe }}
+								</p>
+							</div>
 						</div>
-						<div class="c-slider__content">
-							<p class="c-slider__title">
-								{{ item.title | safe }}
-							</p>
-							<p class="c-slider__text">
-								{{ item.text | safe }}
+						{%- endfor %}
+					</div>
+				</div>
+				<div class="c-btn__wrapper">
+					<a class="c-btn c-btn--sm" href="#">
+						Подать заявку
+					</a>
+				</div>
+			</div>
+		</section>
+		
+		<section class="l-section l-section--blue c-scenaries">
+			<div class="l-container">
+				<h2 class="c-title">Приоритетные сценарии</h2>
+				<div class="c-slider__wrapper">
+					<div class="c-slider">
+						{%- for item in index.scenaries %}
+						<div class="c-slider__item">
+							<div class="c-slider__logo l-flex">
+								<img src="{{ item.logo | img_asset }}" width="{{ item.widthLogo }}" height="{{ item.heightLogo }}" alt="">
+							</div>
+							<div class="c-slider__content">
+								<p class="c-slider__title">
+									{{ item.title | safe }}
+								</p>
+								<p class="c-slider__text">
+									{{ item.text | safe }}
+								</p>
+							</div>
+							<a class="c-btn c-btn--xs" href="{{ item.linkHref }}">
+								Подробнее
+							</a>
+						</div>
+						{%- endfor %}
+					</div>
+				</div>
+				<div class="l-row">
+					<div class="l-col--md-6">
+						<div class="c-scenaries__item l-flex">
+							<img class="c-scenaries__img" src="{{ 'scenaries-icon-1.png' | img_asset }}" alt="">
+							<p class="c-scenaries__text">
+								Посмотреть все возможные сценарии вы&nbsp;можете на&nbsp;карте
+								<a href="#">Microsoft Azure</a>
 							</p>
 						</div>
 					</div>
-					{%- endfor %}
-				</div>	
+					<div class="l-col--md-6">
+						<div class="c-scenaries__item l-flex">
+							<img class="c-scenaries__img" src="{{ 'scenaries-icon-2.png' | img_asset }}" alt="">
+							<p class="c-scenaries__text">
+								Нужна техническая документация?
+								<a href="#">Смотрите тут</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="l-section l-section--white">
+			<div class="l-container">
+				<h2 class="c-title">FAQ</h2>
 			</div>
 		</section>
 

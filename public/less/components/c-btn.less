@@ -10,8 +10,22 @@
 	text-decoration: none;
 	transition: background .3s ease;
 
+	&--sm {
+		padding: 17px 50px;
+		.fz(24, 27);
+	}
+
+	&--xs {
+		padding: 6px 30px;
+		.fz(19, 34);
+	}
+	
 	&:hover,
 	&:focus {
 		background-color: darken(#89c402, 10%);
+	}
+	
+	&__wrapper {
+		text-align: center;
 	}
 }
