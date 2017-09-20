@@ -1,21 +1,26 @@
 .c-btn {
 	display: inline-block;
 	vertical-align: top;
-	padding: 18px 53px;
+	padding: 17px 50px;
 	background: #89c402;
-	.fz(30, 34);
+	.fz(24, 27);
 	font-family: @base-font;
 	font-weight: 300;
 	color: #fff;
 	text-decoration: none;
 	transition: background .3s ease;
+	
+	&--lg {
+		padding: 18px 53px;
+		.fz(30, 34);
 
-	&--sm {
-		padding: 17px 50px;
-		.fz(24, 27);
+		@media screen and (max-width: @screen-lg) {
+			padding: 17px 50px;
+			.fz(24, 27);
+		}
 	}
 
-	&--xs {
+	&--sm {
 		padding: 6px 30px;
 		.fz(19, 34);
 	}

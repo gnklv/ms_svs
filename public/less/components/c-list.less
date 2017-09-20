@@ -13,5 +13,13 @@
 			.circle(5px);
 			background-color: @color-bg;
 		}
+
+		@media screen and (max-width: @screen-lg) {
+			padding-left: 20px;
+
+			&::before {
+				top: 10px;
+			}
+		}
 	}
 }

@@ -2,6 +2,10 @@
 	
 	&__content {
 		margin-bottom: 85px;
+
+		@media screen and (max-width: @screen-lg) {
+			margin-bottom: 60px;
+		}
 	}
 
 	&__item {
@@ -17,6 +21,10 @@
 		.fz(30, 36);
 		font-weight: 300;
 		color: #98eaff;
+
+		@media screen and (max-width: @screen-lg) {
+			.fz(24, 28);
+		}
 	}
 
 	&__text {
@@ -26,6 +34,10 @@
 
 		span {
 			color: #98eaff;
+		}
+
+		@media screen and (max-width: @screen-lg) {
+			.fz(18, 24);
 		}
 	}
 }

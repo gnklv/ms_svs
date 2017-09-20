@@ -1,0 +1,122 @@
+.c-accordion {
+	padding-top: 30px;
+	margin-bottom: 56px;
+	
+	@media screen and (max-width: @screen-lg) {
+		padding-top: 25px;
+		margin-bottom: 40px;
+	}
+
+	&__item {
+		margin-bottom: 10px;
+		background-color: #f6f6f6;
+		transition: padding .3s;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&.open {
+			padding-bottom: 30px;
+
+			.c-accordion__icon {
+				background-color: #006ecc;
+
+				&::before,
+				&::after {
+					background-color: #fff;
+					transform: translate(-50%, -50%) rotate(45deg);
+				}
+			}
+		}
+	}
+
+	&__content {
+		display: none;
+		padding: 15px 30px;
+		margin: 0 30px;
+		background-color: #fff;
+
+		a {
+			color: #0079d6;
+			text-decoration: none;
+
+			&:hover,
+			&:focus {
+				color: darken(#0079d6, 10%);
+			}
+		}
+
+		@media screen and (max-width: @screen-lg) {
+			padding: 10px 25px;
+			margin: 0 25px;
+		}
+	}
+
+	&__heading {
+		position: relative;
+		display: block;
+		width: 100%;
+		padding: 30px;
+		padding-left: 80px;
+		border: 0;
+		background-color: transparent;
+		text-align: left;
+		.fz(30, 36);
+		font-family: @base-font;
+		font-weight: 100;
+		color: #006ecc;
+		outline: none;
+		cursor: pointer;
+
+		@media screen and (max-width: @screen-lg) {
+			padding: 25px;
+			padding-left: 70px;
+			.fz(24, 28);
+		}
+	}
+
+	&__icon {
+		position: absolute;
+		left: 30px;
+		top: 38px;
+		width: 22px;
+		height: 22px;
+		border: 2px solid #006ecc;
+
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: #006ecc;
+			transition: transform .3s;
+		}
+
+		&::before {
+			width: 12px;
+			height: 2px;
+		}
+
+		&::after {
+			width: 2px;
+			height: 12px;
+		}
+
+		@media screen and (max-width: @screen-lg) {
+			top: 30px;
+			left: 25px;
+		}
+	}
+
+	&__text {
+		.fz(19, 28);
+		font-weight: 300;
+
+		@media screen and (max-width: @screen-lg) {
+			.fz(18, 25);
+		}
+	}
+}

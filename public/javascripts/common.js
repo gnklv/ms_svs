@@ -1,2 +1,2 @@
-"use strict";$(document).ready(function(){$(".c-slider").slick({arrows:!0,dots:!0,slidesToShow:4,slidesToScroll:4})});
+"use strict";$(document).ready(function(){function o(o){var s=$(o.target).closest(".c-accordion__item"),e=s.find(".c-accordion__content");s.hasClass("open")?(s.removeClass("open"),e.slideUp(300)):(s.addClass("open"),e.slideDown(300))}$(".c-slider").slick({arrows:!0,dots:!0,slidesToShow:4,slidesToScroll:4,responsive:[{breakpoint:1200,settings:{slidesToShow:3,slidesToScroll:3}}]}),$(".c-accordion__heading").on("click",o)});
 //# sourceMappingURL=../javascripts/common.js.map

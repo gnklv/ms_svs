@@ -23,7 +23,10 @@
 				</h2>
 				<div class="c-about__row">
 					<div class="c-about__col c-about__col--left">
-						<a class="c-btn" href="#">Подать заявку</a>
+						<img class="c-about__bg" src="{{ 'about-bg.png' | img_asset }}" alt="">
+						<div class="c-btn__wrapper">
+							<a class="c-btn c-btn--lg" href="https://events.techdays.ru/ISVs/2017-09/" target="_blank">Подать заявку</a>
+						</div>
 					</div>
 					<div class="c-about__col c-about__col--right">
 						<ul class="c-about__list">
@@ -117,7 +120,7 @@
 							Кампании
 						</p>
 						<p class="c-results__text">
-							Проведено более 20&nbsp;совместных маркетинговых кампания для продвижения партнерских решений.
+							Проведено более 20&nbsp;совместных маркетинговых кампаний для продвижения партнерских решений.
 						</p>
 					</div>
 					<div class="l-col--md-3 c-results__item">
@@ -170,10 +173,16 @@
 							</div>
 						</div>
 						{%- endfor %}
+						<div class="c-slider__item c-slider__item-plus">
+							<div class="c-slider__video"></div>
+							<div class="c-slider__logo"></div>
+							<div class="c-slider__content"></div>
+							<a class="c-slider__plus" href="https://events.techdays.ru/ISVs/2017-09/" target="_blank"></a>
+						</div>
 					</div>
 				</div>
 				<div class="c-btn__wrapper">
-					<a class="c-btn c-btn--sm" href="#">
+					<a class="c-btn" href="https://events.techdays.ru/ISVs/2017-09/" target="_blank">
 						Подать заявку
 					</a>
 				</div>
@@ -198,7 +207,7 @@
 									{{ item.text | safe }}
 								</p>
 							</div>
-							<a class="c-btn c-btn--xs" href="{{ item.linkHref }}">
+							<a class="c-btn c-btn--sm" href="{{ item.linkHref }}">
 								Подробнее
 							</a>
 						</div>
@@ -208,7 +217,9 @@
 				<div class="l-row">
 					<div class="l-col--md-6">
 						<div class="c-scenaries__item l-flex">
-							<img class="c-scenaries__img" src="{{ 'scenaries-icon-1.png' | img_asset }}" alt="">
+							<div class="c-scenaries__img-wrapper">
+								<img class="c-scenaries__img" src="{{ 'scenaries-icon-1.png' | img_asset }}" alt="">
+							</div>
 							<p class="c-scenaries__text">
 								Посмотреть все возможные сценарии вы&nbsp;можете на&nbsp;карте
 								<a href="#">Microsoft Azure</a>
@@ -217,9 +228,11 @@
 					</div>
 					<div class="l-col--md-6">
 						<div class="c-scenaries__item l-flex">
-							<img class="c-scenaries__img" src="{{ 'scenaries-icon-2.png' | img_asset }}" alt="">
+							<div class="c-scenaries__img-wrapper">
+								<img class="c-scenaries__img" src="{{ 'scenaries-icon-2.png' | img_asset }}" alt="">
+							</div>
 							<p class="c-scenaries__text">
-								Нужна техническая документация?
+								Нужна техническая документация? <br>
 								<a href="#">Смотрите тут</a>
 							</p>
 						</div>
@@ -231,6 +244,278 @@
 		<section class="l-section l-section--white">
 			<div class="l-container">
 				<h2 class="c-title">FAQ</h2>
+				<div class="c-accordion">
+					{%- for item in index.accordion %}
+					<div class="c-accordion__item">
+						<button class="c-accordion__heading">
+							<span class="c-accordion__icon"></span>
+							{{ item.heading | safe }}
+						</button>
+						<div class="c-accordion__content">
+							{{ item.content | safe }}
+						</div>
+					</div>
+					{%- endfor %}
+					<div class="c-accordion__item">
+						<button class="c-accordion__heading">
+							<span class="c-accordion__icon"></span>
+							Какие есть варианты приобретения и&nbsp;оплаты сервисов в&nbsp;Microsoft Azure?
+						</button>
+						<div class="c-accordion__content c-table__wrapper">
+							<p class="c-accordion__text">
+								Мы&nbsp;собрали все варианты приобретения Azure в&nbsp;наглядной таблице для Вашего удобства, чтобы&nbsp;Вы могли выбрать наиболее подходящий.
+							</p>
+							<table class="c-table">
+								<thead>
+									<tr>
+										<td>
+											Варианты приобретения Azure
+										</td>
+										<td>
+											Pay-As-You-Go покупка на&nbsp;сайте microsoft.com 
+										</td>
+										<td>
+											Корпоративное соглашение Enterprise Agreement
+										</td>
+										<td>
+											Соглашение Open License
+										</td>
+										<td>
+											CSP (соглашение с&nbsp;сервисным центром)
+										</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											Тип оплаты
+										</td>
+										<td>
+											Постоплата
+										</td>
+										<td>
+											Предоплата
+											<span>годовое обязательство</span>
+										</td>
+										<td>
+											Предоплата
+											<span>покупка ключевой активации</span>
+										</td>
+										<td>
+											Постоплата
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Способ оплаты
+										</td>
+										<td>
+											Банковская карта
+										</td>
+										<td>
+											Оплата по&nbsp;выставленному счету
+										</td>
+										<td>
+											Оплата по&nbsp;выставленному счету
+										</td>
+										<td>
+											Оплата по&nbsp;выставленному счету
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Срок контракта
+										</td>
+										<td>
+											Помесячная оплата
+										</td>
+										<td>
+											Трехлетний контракт
+											<span>ежегодный пересмотр</span>
+										</td>
+										<td>
+											12 месяцев
+											<span>с&nbsp;момента активации ключа</span>
+										</td>
+										<td>
+											Помесячная оплата
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Фиксация стоимости
+										</td>
+										<td class="c-table__td-icon">
+											Нет
+											<span class="c-table__icon c-table__icon--false"></span>
+										</td>
+										<td class="c-table__td-icon">
+											Да, руб. на&nbsp;три года
+											<span class="c-table__icon c-table__icon--true"></span>
+										</td>
+										<td class="c-table__td-icon">
+											Нет
+											<span class="c-table__icon c-table__icon--false"></span>
+										</td>
+										<td class="c-table__td-icon">
+											Нет
+											<span class="c-table__icon c-table__icon--false"></span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Доступность сервисов платформы
+										</td>
+										<td class="c-table__td-icon">
+											Все
+											<span class="c-table__icon c-table__icon--true"></span>
+										</td>
+										<td class="c-table__td-icon">
+											Все
+											<span class="c-table__icon c-table__icon--true"></span>
+										</td>
+										<td class="c-table__td-icon">
+											Все
+											<span class="c-table__icon c-table__icon--true"></span>
+										</td>
+										<td>
+											Уточняйте у&nbsp;сервис-провайдеров
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Программа скидок
+										</td>
+										<td class="c-table__td-icon">
+											Нет
+											<span class="c-table__icon c-table__icon--false"></span>
+										</td>
+										<td class="c-table__td-icon">
+											Есть
+											<span class="c-table__icon c-table__icon--true"></span>
+										</td>
+										<td class="c-table__td-icon">
+											Нет
+											<span class="c-table__icon c-table__icon--false"></span>
+										</td>
+										<td class="c-table__td-icon">
+											Есть
+											<span class="c-table__icon c-table__icon--true"></span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Минимальная стоимость контракта
+										</td>
+										<td class="c-table__td-icon">
+											Нет
+											<span class="c-table__icon c-table__icon--false"></span>
+										</td>
+										<td class="c-table__td-icon">
+											$12&nbsp;000&nbsp;в год
+											<span class="c-table__icon c-table__icon--true"></span>
+										</td>
+										<td class="c-table__td-icon">
+											$100
+											<span class="c-table__icon c-table__icon--true"></span>
+										</td>
+										<td class="c-table__td-icon">
+											Нет
+											<span class="c-table__icon c-table__icon--false"></span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Техническая поддержка
+											<span>
+												Дополнительно к&nbsp;услугам, включенным в&nbsp;подписку
+												<a href="#">Подробнее здесь</a>
+											</span>
+										</td>
+										<td>
+											Приобретение плана поддержки online
+										</td>
+										<td>
+											Приобретение плана поддержки у&nbsp;партнера
+											<span>включается в&nbsp;соглашение</span>
+										</td>
+										<td>
+											Приобретение поддержки online
+										</td>
+										<td>
+											Поддержка от&nbsp;сервис-провайдера	
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Преимущества
+										</td>
+										<td>
+											Быстрое оформление на&nbsp;сайте
+										</td>
+										<td>
+											Специальные промо, выделенный аккаунт
+										</td>
+										<td>
+											Покупка ключей у&nbsp;поставщика, предоставляющего вам лицензии на&nbsp;другие ИТ-продукты
+										</td>
+										<td>
+											Сервис-провайдеры оказывают консультации по&nbsp;архитектуре решений, помощь с&nbsp;миграцией и&nbsp;разработкой, а&nbsp;также продвижением решений
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Рассчитать стоимость
+										</td>
+										<td>
+											<a href="#">Калькулятор цен</a>
+										</td>
+										<td>
+											<a href="#">Обратитесь к&nbsp;партнеру</a>
+										</td>
+										<td>
+											<a href="#">Обратитесь к&nbsp;поставщику</a>
+										</td>
+										<td>
+											<a href="#">Обратитесь к&nbsp;нам</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="c-btn__wrapper">
+					<a class="c-btn" href="https://events.techdays.ru/ISVs/2017-09/" target="_blank">
+						Подвать заявку
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="c-contacts">
+			<div class="l-container">
+				<div class="l-row">
+					<div class="l-col--md-6">
+						<p class="c-contacts__heading">
+							Задайте вопрос эксперту Microsoft по&nbsp;программе
+						</p>
+						<div class="c-contacts__social-wrapper">
+							<a class="c-contacts__social" style="background-image: url({{ 'tm-icon.png' | img_asset }})" href="#"></a>
+							<a class="c-contacts__social" style="background-image: url({{ 'gm-icon.png' | img_asset }})" href="#"></a>
+						</div>
+					</div>
+					<div class="l-col--md-6">
+						<p class="c-contacts__heading">
+							Присоединяйтесь к&nbsp;нашим группам в&nbsp;социальных сетях
+						</p>
+						<div class="c-contacts__social-wrapper">
+							<a class="c-contacts__social" style="background-image: url({{ 'vk-icon.png' | img_asset }})" href="#"></a>
+							<a class="c-contacts__social" style="background-image: url({{ 'fb-icon.png' | img_asset }})" href="#"></a>
+							<a class="c-contacts__social" style="background-image: url({{ 'tw-icon.png' | img_asset }})" href="#"></a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 

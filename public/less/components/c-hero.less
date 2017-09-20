@@ -9,11 +9,19 @@
 		font-weight: 100;
 		letter-spacing: -.005em;
 		color: #fff;
+
+		@media screen and (max-width: @screen-lg) {
+			.fz(46, 54);
+		}
 	} 
 
 	&__text {
 		.fz(24, 32);
 		font-weight: 300;
 		color: #fff;
+
+		@media screen and (max-width: @screen-lg) {
+			.fz(20, 26);
+		}
 	}
 }
