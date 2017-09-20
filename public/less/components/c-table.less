@@ -32,7 +32,12 @@
 			color: #0866b4;
 
 			&:first-child {
+				padding-left: 30px;
 				color: #a1a1a4;
+
+				@media screen and (max-width: @screen-md) {
+					display: none;
+				}
 			}
 		}
 	}
@@ -70,13 +75,19 @@
 				&:hover,
 				&:focus {
 					color: darken(#008fd3, 10%);
+					text-decoration: none;
 				}
 			}
 
 			&:first-child {
+				padding-left: 30px;
 				border-right: 0;
 				border-color: #efefef;
 				color: #0866b4;
+
+				@media screen and (max-width: @screen-md) {
+					display: none;
+				}
 
 				a {
 					text-decoration: none;

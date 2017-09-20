@@ -4,6 +4,10 @@
 	<main class="c-content">
 		
 		<section class="c-hero">
+			<img class="c-hero__parallax-img c-hero__parallax-img--1" src="{{ 'hero-img-1.png' | img_asset }}" alt="" data-aos="fade-in">
+			<img class="c-hero__parallax-img c-hero__parallax-img--2" src="{{ 'hero-img-2.png' | img_asset }}" alt="" data-aos="fade-in">
+			<img class="c-hero__parallax-img c-hero__parallax-img--3" src="{{ 'hero-img-3.png' | img_asset }}" alt="" data-aos="fade-in">
+			<img class="c-hero__parallax-img c-hero__parallax-img--4" src="{{ 'hero-img-4.png' | img_asset }}" alt="" data-aos="fade-in">
 			<div class="l-container">
 				<h1 class="c-hero__title">
 					Программа продвижения <br>
@@ -23,15 +27,24 @@
 				</h2>
 				<div class="c-about__row">
 					<div class="c-about__col c-about__col--left">
-						<img class="c-about__bg" src="{{ 'about-bg.png' | img_asset }}" alt="">
+						<div class="c-about__bg">
+							<img src="{{ 'about-bg.png' | img_asset }}" alt="">
+							<div class="c-about__progress-wrapper" data-aos="zoom-in">
+								<div class="c-about__progress">
+									<div class="c-about__progress-grayback"></div>
+									<div class="c-about__progress-strips"></div>
+								</div>
+								<span class="c-about__progress-perc"></span>	
+							</div>
+						</div>
 						<div class="c-btn__wrapper">
 							<a class="c-btn c-btn--lg" href="https://events.techdays.ru/ISVs/2017-09/" target="_blank">Подать заявку</a>
 						</div>
 					</div>
 					<div class="c-about__col c-about__col--right">
 						<ul class="c-about__list">
-							<li class="c-about__item l-flex l-flex__ai-start">
-								<div class="c-about__icon">
+							<li class="c-about__item l-flex l-flex__ai-start" data-aos="fade-left" data-aos-delay="0">
+								<div class="c-about__icon" data-aos="zoom-in" data-aos-delay="300">
 									<img src="{{ 'about-icon-1.png' | img_asset }}" width="84" height="71" alt="">
 								</div>
 								<div class="c-about__content">
@@ -43,8 +56,8 @@
 									</p>	
 								</div>
 							</li>
-							<li class="c-about__item l-flex l-flex__ai-start">
-								<div class="c-about__icon">
+							<li class="c-about__item l-flex l-flex__ai-start" data-aos="fade-left" data-aos-delay="100">
+								<div class="c-about__icon" data-aos="zoom-in" data-aos-delay="400">
 									<img src="{{ 'about-icon-2.png' | img_asset }}" width="84" height="73" alt="">
 								</div>
 								<div class="c-about__content">
@@ -70,8 +83,8 @@
 									</ul>
 								</div>
 							</li>
-							<li class="c-about__item l-flex l-flex__ai-start">
-								<div class="c-about__icon">
+							<li class="c-about__item l-flex l-flex__ai-start" data-aos="fade-left" data-aos-delay="200">
+								<div class="c-about__icon" data-aos="zoom-in" data-aos-delay="500">
 									<img src="{{ 'about-icon-3.png' | img_asset }}" width="84" height="69" alt="">
 								</div>
 								<div class="c-about__content">
@@ -101,8 +114,8 @@
 					</p>
 				</div>
 				<div class="l-row">
-					<div class="l-col--md-3 c-results__item">
-						<div class="c-results__icon">
+					<div class="l-col--md-3 c-results__item" data-aos="fade-up" data-aos-delay="0">
+						<div class="c-results__icon" data-aos="zoom-in" data-aos-delay="300">
 							<img src="{{ 'results-icon-1.png' | img_asset }}" width="86" height="86" alt="">
 						</div>
 						<p class="c-results__title">
@@ -112,8 +125,8 @@
 							Партнерам было передано более 250 сделок.
 						</p>
 					</div>
-					<div class="l-col--md-3 c-results__item">
-						<div class="c-results__icon">
+					<div class="l-col--md-3 c-results__item" data-aos="fade-up" data-aos-delay="100">
+						<div class="c-results__icon" data-aos="zoom-in" data-aos-delay="400">
 							<img src="{{ 'results-icon-2.png' | img_asset }}" width="86" height="86" alt="">
 						</div>
 						<p class="c-results__title">
@@ -123,8 +136,8 @@
 							Проведено более 20&nbsp;совместных маркетинговых кампаний для продвижения партнерских решений.
 						</p>
 					</div>
-					<div class="l-col--md-3 c-results__item">
-						<div class="c-results__icon">
+					<div class="l-col--md-3 c-results__item" data-aos="fade-up" data-aos-delay="200">
+						<div class="c-results__icon" data-aos="zoom-in" data-aos-delay="500">
 							<img src="{{ 'results-icon-3.png' | img_asset }}" width="86" height="86" alt="">
 						</div>
 						<p class="c-results__title">
@@ -134,8 +147,8 @@
 							Организовано участие партнеров в&nbsp;более чем 10&nbsp;индустриальных мероприятиях.
 						</p>
 					</div>
-					<div class="l-col--md-3 c-results__item">
-						<div class="c-results__icon">
+					<div class="l-col--md-3 c-results__item" data-aos="fade-up" data-aos-delay="300">
+						<div class="c-results__icon" data-aos="zoom-in" data-aos-delay="600">
 							<img src="{{ 'results-icon-4.png' | img_asset }}" width="86" height="86" alt="">
 						</div>
 						<p class="c-results__title">

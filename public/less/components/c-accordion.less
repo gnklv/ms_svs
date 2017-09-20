@@ -19,6 +19,13 @@
 		&.open {
 			padding-bottom: 30px;
 
+			.c-accordion__heading {
+				&:hover,
+				&:focus {
+					background: transparent;
+				}
+			}
+
 			.c-accordion__icon {
 				background-color: #006ecc;
 
@@ -68,6 +75,12 @@
 		color: #006ecc;
 		outline: none;
 		cursor: pointer;
+		transition: background .3s;
+
+		&:hover,
+		&:focus {
+			background-color: darken(#f6f6f6, 3%);
+		}
 
 		@media screen and (max-width: @screen-lg) {
 			padding: 25px;
