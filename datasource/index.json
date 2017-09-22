@@ -115,7 +115,7 @@
 		},
 		{
 			"heading": "Как мне попасть в&nbsp;программу?",
-			"content": "<p class='c-accordion__text'>Для участия в&nbsp;программе необходимо пройти несколько простых шагов:<br>1) Заполнить форму заявки ниже (мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;течение 2-х недель);<br>2) Предоставить дополнительную информацию о&nbsp;компании и&nbsp;решении (вопросы мы&nbsp;пришлем);<br>3) Познакомить команду Microsoft с&nbsp;Вашим решением на&nbsp;мероприятии лично.</p>"
+			"content": "<p class='c-accordion__text'>Для участия в&nbsp;программе необходимо пройти несколько простых шагов:</p><br><ol class='c-list-ol'><li class='c-list-ol__item c-accordion__text'>Заполнить форму заявки ниже (мы&nbsp;свяжемся с&nbsp;Вами в&nbsp;течение 2-х недель);</li><li class='c-list-ol__item c-accordion__text'>Предоставить дополнительную информацию о&nbsp;компании и&nbsp;решении (вопросы мы&nbsp;пришлем);</li><li class='c-list-ol__item c-accordion__text'>Познакомить команду Microsoft с&nbsp;Вашим решением на&nbsp;мероприятии лично.</li></ol>"
 		},
 		{
 			"heading": "Нужно&nbsp;ли подписывать договор о&nbsp;сотрудничестве?",
@@ -136,6 +136,60 @@
 		{
 			"heading": "Наша компания&nbsp;&mdash; стартап. Есть&nbsp;ли специальные условия?",
 			"content": "<p class='c-accordion__text'>Да, Вы&nbsp;можете получить бесплатный доступ к&nbsp;новейшим технологиям и&nbsp;экспертной поддержке. Лучшие решения смогут привлечь внимание к&nbsp;своему проекту и&nbsp;выйти на&nbsp;новые рынки. <a href='#'>Подробнее о&nbsp;программе</a>.</p>"
+		}
+	],
+	"table": [
+		{
+			"title": "Pay-As-You-Go покупка на&nbsp;сайте microsoft.com",
+			"type": "Постоплата",
+			"method": "Банковская карта",
+			"date": "Помесячная оплата",
+			"fixation": "Нет<span class='c-table__icon c-table__icon--false'></span>",
+			"availability": "Все<span class='c-table__icon c-table__icon--true'></span>",
+			"programm": "Нет<span class='c-table__icon c-table__icon--false'></span>",
+			"cost": "Нет<span class='c-table__icon c-table__icon--false'></span>",
+			"support": "Приобретение плна поддержки online",
+			"features": "Быстрое оформление на&nbsp;сайте",
+			"calc": "<a href='#'>Калькулятор цен</a>"
+		},
+		{
+			"title": "Корпоративное соглашение Enterprise Agreement",
+			"type": "Предоплата<span>годовое обязательство</span>",
+			"method": "Оплата по&nbsp;выставленному счету",
+			"date": "Трехлетний контракт<span>ежегодный пересмотр</span>",
+			"fixation": "Да, руб. на&nbsp;три года<span class='c-table__icon c-table__icon--true'></span>",
+			"availability": "Все<span class='c-table__icon c-table__icon--true'></span>",
+			"programm": "Есть<span class='c-table__icon c-table__icon--true'></span>",
+			"cost": "$12&nbsp;000&nbsp;в год<span class='c-table__icon c-table__icon--true'></span>",
+			"support": "Приобретение плана поддержки у&nbsp;партнера<span>включается в&nbsp;соглашение</span>",
+			"features": "Специальные промо, выделенный аккаунт",
+			"calc": "<a href='#'>Обратитесь к&nbsp;партнеру</a>"
+		},
+		{
+			"title": "Соглашение Open License",
+			"type": "Предоплата<span>покупка ключевой активации</span>",
+			"method": "Оплата по&nbsp;выставленному счету",
+			"date": "12 месяцев<span>с&nbsp;момента активации ключа</span>",
+			"fixation": "Нет<span class='c-table__icon c-table__icon--false'></span>",
+			"availability": "Все<span class='c-table__icon c-table__icon--true'></span>",
+			"programm": "Нет<span class='c-table__icon c-table__icon--false'></span>",
+			"cost": "$100<span class='c-table__icon c-table__icon--true'></span>",
+			"support": "Приобретение поддержки online",
+			"features": "Покупка ключей у&nbsp;поставщика, предоставляющего вам лицензии на&nbsp;другие ИТ-продукты",
+			"calc": "<a href='#'>Обратитесь к&nbsp;поставщику</a>"
+		},
+		{
+			"title": "CSP (соглашение с&nbsp;сервисным центром)",
+			"type": "Постоплата",
+			"method": "Оплата по&nbsp;выставленному счету",
+			"date": "Помесячная оплата",
+			"fixation": "Нет<span class='c-table__icon c-table__icon--false'></span>",
+			"availability": "Уточняйте у&nbsp;сервис-провайдеров",
+			"programm": "Есть<span class='c-table__icon c-table__icon--true'></span>",
+			"cost": "Нет<span class='c-table__icon c-table__icon--false'></span>",
+			"support": "Поддержка от&nbsp;сервис-провайдера",
+			"features": "Сервис-провайдеры оказывают консультации по&nbsp;архитектуре решений, помощь с&nbsp;миграцией и&nbsp;разработкой, а&nbsp;также продвижением решений",
+			"calc": "<a href='#'>Обратитесь к&nbsp;нам</a>"
 		}
 	]
 }

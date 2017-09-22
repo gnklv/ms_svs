@@ -35,6 +35,10 @@
 					transform: translate(-50%, -50%) rotate(45deg);
 				}
 			}
+
+			@media screen and (max-width: @screen-xs-max) {
+				padding-bottom: 15px;
+			}
 		}
 	}
 
@@ -57,6 +61,11 @@
 		@media screen and (max-width: @screen-lg) {
 			padding: 10px 25px;
 			margin: 0 25px;
+		}
+
+		@media screen and (max-width: @screen-xs-max) {
+			padding: 10px 15px;
+			margin: 0 15px;
 		}
 	}
 
@@ -87,6 +96,12 @@
 			padding-left: 70px;
 			.fz(24, 28);
 		}
+
+		@media screen and (max-width: @screen-xs-max) {
+			padding: 15px;
+			padding-left: 50px;
+			.fz(20, 23);
+		}
 	}
 
 	&__icon {
@@ -96,6 +111,7 @@
 		width: 22px;
 		height: 22px;
 		border: 2px solid #006ecc;
+		
 
 		&::before,
 		&::after {
@@ -122,6 +138,11 @@
 			top: 30px;
 			left: 25px;
 		}
+
+		@media screen and (max-width: @screen-xs-max) {
+			left: 15px;
+			top: 20px;
+		}
 	}
 
 	&__text {
@@ -130,6 +151,10 @@
 
 		@media screen and (max-width: @screen-lg) {
 			.fz(18, 25);
+		}
+
+		@media screen and (max-width: @screen-xs-max) {
+			.fz(16, 21);
 		}
 	}
 }

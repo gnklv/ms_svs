@@ -6,6 +6,20 @@
 		padding: 60px 0 70px;
 	}
 
+	@media screen and (max-width: @screen-xs-max) {
+		padding: 40px 0 45px;
+	}
+	
+	&__item {
+		@media screen and (max-width: @screen-xs-max) {
+			margin-bottom: 30px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
 	&__heading {
 		margin-bottom: round(25/30em, 3);
 		.fz(30, 36);
@@ -15,6 +29,10 @@
 		
 		@media screen and (max-width: @screen-lg) {
 			.fz(24, 28);
+		}
+
+		@media screen and (max-width: @screen-xs-max) {
+			.fz(20, 24)
 		}
 	}
 
@@ -36,6 +54,13 @@
 		&:hover,
 		&:focus {
 			background-color: darken(@color-bg, 20%);
+		}
+
+		@media screen and (max-width: @screen-xs-max) {
+			width: 35px;
+			height: 35px;
+			background-size: contain;
+			margin-right: 10px;
 		}
 	}
 }

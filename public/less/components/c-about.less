@@ -109,14 +109,28 @@
 
 	&__item {
 		margin-bottom: 40px;
-
+		
 		&:last-child {
 			margin-bottom: 0;
+		}
+
+		@media screen and (max-width: @screen-md) {
+			margin-bottom: 30px;
+		}
+
+		@media screen and (max-width: @screen-xs-max) {
+			display: block;
+			text-align: center;
 		}
 	}
 	
 	&__icon {
 		margin-right: 27px;
+
+		@media screen and (max-width: @screen-xs-max) {
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
 	}
 
 	&__title {
@@ -128,6 +142,10 @@
 		@media screen and (max-width: @screen-lg) {
 			.fz(24, 28);
 		}
+
+		@media screen and (max-width: @screen-xs-max) {
+			.fz(20, 23);
+		}
 	}
 
 	&__text {
@@ -137,6 +155,10 @@
 
 		@media screen and (max-width: @screen-lg) {
 			.fz(18, 24);
+		}
+
+		@media screen and (max-width: @screen-xs-max) {
+			.fz(16, 21);
 		}
 	}
 }

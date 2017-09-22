@@ -10,10 +10,22 @@
 
 	&__item {
 		text-align: center;
+
+		@media screen and (max-width: @screen-md) {
+			margin-bottom: 40px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
 	}
 	
 	&__icon {
 		margin-bottom: 24px;
+
+		@media screen and (max-width: @screen-xs-max) {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__title {
@@ -24,6 +36,10 @@
 
 		@media screen and (max-width: @screen-lg) {
 			.fz(24, 28);
+		}
+
+		@media screen and (max-width: @screen-xs-max) {
+			.fz(20, 23);
 		}
 	}
 
@@ -38,6 +54,10 @@
 
 		@media screen and (max-width: @screen-lg) {
 			.fz(18, 24);
+		}
+
+		@media screen and (max-width: @screen-xs-max) {
+			.fz(16, 21);
 		}
 	}
 }

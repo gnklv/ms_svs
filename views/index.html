@@ -29,7 +29,7 @@
 					<div class="c-about__col c-about__col--left">
 						<div class="c-about__bg">
 							<img src="{{ 'about-bg.png' | img_asset }}" alt="">
-							<div class="c-about__progress-wrapper" data-aos="zoom-in">
+							<div class="c-about__progress-wrapper" data-aos="zoom-in" data-perc="95">
 								<div class="c-about__progress">
 									<div class="c-about__progress-grayback"></div>
 									<div class="c-about__progress-strips"></div>
@@ -38,7 +38,7 @@
 							</div>
 						</div>
 						<div class="c-btn__wrapper">
-							<a class="c-btn c-btn--lg" href="https://events.techdays.ru/ISVs/2017-09/" target="_blank">Подать заявку</a>
+							<a class="c-btn c-btn--lg" href="https://events.techdays.ru/ISVs/2017-09/">Подать заявку</a>
 						</div>
 					</div>
 					<div class="c-about__col c-about__col--right">
@@ -114,7 +114,7 @@
 					</p>
 				</div>
 				<div class="l-row">
-					<div class="l-col--md-3 c-results__item" data-aos="fade-up" data-aos-delay="0">
+					<div class="l-col--md-3 l-col--sm-6 c-results__item" data-aos="fade-up" data-aos-delay="0">
 						<div class="c-results__icon" data-aos="zoom-in" data-aos-delay="300">
 							<img src="{{ 'results-icon-1.png' | img_asset }}" width="86" height="86" alt="">
 						</div>
@@ -125,7 +125,7 @@
 							Партнерам было передано более 250 сделок.
 						</p>
 					</div>
-					<div class="l-col--md-3 c-results__item" data-aos="fade-up" data-aos-delay="100">
+					<div class="l-col--md-3 l-col--sm-6 c-results__item" data-aos="fade-up" data-aos-delay="100">
 						<div class="c-results__icon" data-aos="zoom-in" data-aos-delay="400">
 							<img src="{{ 'results-icon-2.png' | img_asset }}" width="86" height="86" alt="">
 						</div>
@@ -136,7 +136,7 @@
 							Проведено более 20&nbsp;совместных маркетинговых кампаний для продвижения партнерских решений.
 						</p>
 					</div>
-					<div class="l-col--md-3 c-results__item" data-aos="fade-up" data-aos-delay="200">
+					<div class="l-col--md-3 l-col--sm-6 c-results__item" data-aos="fade-up" data-aos-delay="200">
 						<div class="c-results__icon" data-aos="zoom-in" data-aos-delay="500">
 							<img src="{{ 'results-icon-3.png' | img_asset }}" width="86" height="86" alt="">
 						</div>
@@ -147,7 +147,7 @@
 							Организовано участие партнеров в&nbsp;более чем 10&nbsp;индустриальных мероприятиях.
 						</p>
 					</div>
-					<div class="l-col--md-3 c-results__item" data-aos="fade-up" data-aos-delay="300">
+					<div class="l-col--md-3 l-col--sm-6 c-results__item" data-aos="fade-up" data-aos-delay="300">
 						<div class="c-results__icon" data-aos="zoom-in" data-aos-delay="600">
 							<img src="{{ 'results-icon-4.png' | img_asset }}" width="86" height="86" alt="">
 						</div>
@@ -495,6 +495,56 @@
 									</tr>
 								</tbody>
 							</table>
+							<div class="c-table-mob">
+								{%- for item in index.table  %}
+								<div class="c-table-mob__item">
+									<div class="c-table-mob__row-head">
+										<p class="c-table-mob__col-name">Варианты приобретения Azure</p>
+										<p class="c-table-mob__col-value">{{ item.title | safe }}</p>
+									</div>
+									<div class="c-table-mob__row">
+										<p class="c-table-mob__col-name">Тип оплаты</p>
+										<p class="c-table-mob__col-value">{{ item.type | safe }}</p>
+									</div>
+									<div class="c-table-mob__row">
+										<p class="c-table-mob__col-name">Способ оплаты</p>
+										<p class="c-table-mob__col-value">{{ item.method | safe }}</p>
+									</div>
+									<div class="c-table-mob__row">
+										<p class="c-table-mob__col-name">Срок контракта</p>
+										<p class="c-table-mob__col-value">{{ item.date | safe }}</p>
+									</div>
+									<div class="c-table-mob__row">
+										<p class="c-table-mob__col-name">Фиксация стоимости</p>
+										<p class="c-table-mob__col-value c-table__td-icon">{{ item.fixation | safe }}</p>
+									</div>
+									<div class="c-table-mob__row">
+										<p class="c-table-mob__col-name">Доступность сервисов платформы</p>
+										<p class="c-table-mob__col-value c-table__td-icon">{{ item.availability | safe }}</p>
+									</div>
+									<div class="c-table-mob__row">
+										<p class="c-table-mob__col-name">Программа скидок</p>
+										<p class="c-table-mob__col-value c-table__td-icon">{{ item.programm | safe }}</p>
+									</div>
+									<div class="c-table-mob__row">
+										<p class="c-table-mob__col-name">Минимальная стоимость контракта</p>
+										<p class="c-table-mob__col-value c-table__td-icon">{{ item.cost | safe }}</p>
+									</div>
+									<div class="c-table-mob__row">
+										<p class="c-table-mob__col-name">Техническая поддержка<span>Дополнительно к&nbsp;услугам, включенным в&nbsp;подписку<a href="#">Подробнее здесь</a></span></p>
+										<p class="c-table-mob__col-value">{{ item.support | safe }}</p>
+									</div>
+									<div class="c-table-mob__row">
+										<p class="c-table-mob__col-name">Преимущества</p>
+										<p class="c-table-mob__col-value">{{ item.features | safe }}</p>
+									</div>
+									<div class="c-table-mob__row">
+										<p class="c-table-mob__col-name">Рассчитать стоимость</p>
+										<p class="c-table-mob__col-value">{{ item.calc | safe }}</p>
+									</div>
+								</div>
+								{%- endfor %}
+							</div>
 						</div>
 					</div>
 				</div>
@@ -509,7 +559,7 @@
 		<section class="c-contacts">
 			<div class="l-container">
 				<div class="l-row">
-					<div class="l-col--md-6">
+					<div class="l-col--sm-6 c-contacts__item">
 						<p class="c-contacts__heading">
 							Задайте вопрос эксперту Microsoft по&nbsp;программе
 						</p>
@@ -518,7 +568,7 @@
 							<a class="c-contacts__social" style="background-image: url({{ 'gm-icon.png' | img_asset }})" href="#"></a>
 						</div>
 					</div>
-					<div class="l-col--md-6">
+					<div class="l-col--sm-6 c-contacts__item">
 						<p class="c-contacts__heading">
 							Присоединяйтесь к&nbsp;нашим группам в&nbsp;социальных сетях
 						</p>

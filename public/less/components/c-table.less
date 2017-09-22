@@ -1,10 +1,18 @@
 .c-table {
+	@media screen and (max-width: @screen-md) {
+		display: none;
+	}
 
 	&__wrapper.c-accordion__content {
 		padding: 15px 0 0 0;
 
 		.c-accordion__text {
 			padding: 0 30px 15px;
+
+			@media screen and (max-width: @screen-xs-max) {
+				padding: 15px;
+				padding-top: 0;
+			}
 		}
 	}
 	
@@ -34,10 +42,6 @@
 			&:first-child {
 				padding-left: 30px;
 				color: #a1a1a4;
-
-				@media screen and (max-width: @screen-md) {
-					display: none;
-				}
 			}
 		}
 	}
@@ -85,10 +89,6 @@
 				border-color: #efefef;
 				color: #0866b4;
 
-				@media screen and (max-width: @screen-md) {
-					display: none;
-				}
-
 				a {
 					text-decoration: none;
 				}
@@ -135,6 +135,180 @@
 
 		&--true {
 			background-image: url('../images/icon-true.png');
+		}
+	}
+
+	&-mob {
+		display: none;
+
+		@media screen and (max-width: @screen-md) {
+			display: block;
+		}
+
+		&__item {
+			&:nth-child(1) {
+
+				.c-table-mob__col-value {
+					background-color: #ddfaff;
+				}
+			}
+
+			&:nth-child(2) {
+
+				.c-table-mob__col-value {
+					background-color: #d4f3fe;
+				}
+			}
+
+			&:nth-child(3) {
+
+				.c-table-mob__col-value {
+					background-color: #d4effe;	
+				}
+			}
+
+			&:nth-child(4) {
+
+				.c-table-mob__col-value {
+					background-color: #d4e6fe;
+				}
+			}
+
+			.c-table-mob__row-head {
+				display: flex;
+				flex-wrap: nowrap;
+
+				.c-table-mob__col {
+					&-value {
+						position: relative;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						padding: 20px;
+						width: 50%;
+						background-color: #fbfbfb;
+						.fz(19, 26);
+						font-family: @base-font;
+						font-weight: 300;
+						letter-spacing: -.01em;
+						color: #0866b4;
+
+						@media screen and (max-width: @screen-xs-max) {
+							padding: 15px;
+							.fz(16, 22);
+						}
+					}
+
+					&-name {
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						width: 50%;
+						padding: 20px;
+						padding-left: 30px;
+						background-color: #fbfbfb;
+						.fz(19, 26);
+						font-family: @base-font;
+						font-weight: 300;
+						letter-spacing: -.01em;
+						color: #a1a1a4;
+
+						@media screen and (max-width: @screen-xs-max) {
+							padding: 15px;
+							.fz(16, 22);
+						}
+					}
+				}
+			}
+
+			.c-table-mob__row {
+				display: flex;
+				flex-wrap: nowrap;
+				border-bottom: 1px solid #fff;
+				
+				&:nth-child(odd) {
+
+					.c-table-mob__col-name {
+						background-color: #fbfbfb;
+					}
+				}
+
+				&:nth-child(even) {
+
+					.c-table-mob__col-name {
+						background-color: #fff;
+					}
+				}
+
+				.c-table-mob__col {
+
+					&-value {
+						position: relative;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						width: 50%;
+						padding: 20px;
+						.fz(16, 20);
+						font-family: @base-font;
+						letter-spacing: -.01em;
+						color: #454545;
+
+						span {
+							display: block;
+							.fz(12, 16);
+							color: #807f83;
+						}
+
+						a {
+							color: #008fd3;
+							text-decoration: underline;
+
+							&:hover,
+							&:focus {
+								color: darken(#008fd3, 10%);
+								text-decoration: none;
+							}
+						}
+
+						&.c-table__td-icon {
+							padding-right: 56px;
+						}
+
+						@media screen and (max-width: @screen-xs-max) {
+							padding: 15px;
+							.fz(14, 18);
+						}
+					}
+
+					&-name {
+						position: relative;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						width: 50%;
+						padding: 20px;
+						padding-left: 30px;
+				    border-right: 1px solid #fff;
+				    color: #0866b4;
+
+						span {
+							display: block;
+							.fz(12, 16);
+							color: #807f83;
+						}
+
+						a {
+							display: block;
+						}
+
+						@media screen and (max-width: @screen-xs-max) {
+							padding: 15px;
+							.fz(14, 18);
+						}
+					}
+				}
+			}
 		}
 	}
 }

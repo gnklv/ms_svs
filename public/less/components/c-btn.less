@@ -10,6 +10,10 @@
 	text-decoration: none;
 	transition: background .3s ease;
 	
+	@media screen and (max-width: @screen-xs-max) {
+		.fz(20, 22);
+	}
+
 	&--lg {
 		padding: 18px 53px;
 		.fz(30, 34);
@@ -18,11 +22,19 @@
 			padding: 17px 50px;
 			.fz(24, 27);
 		}
+
+		@media screen and (max-width: @screen-xs-max) {
+			.fz(20, 22);
+		}
 	}
 
 	&--sm {
 		padding: 6px 30px;
 		.fz(19, 34);
+		
+		@media screen and (max-width: @screen-xs-max) {
+			.fz(16, 28);
+		}
 	}
 	
 	&:hover,
@@ -30,6 +42,7 @@
 		background-color: darken(#89c402, 10%);
 	}
 	
+
 	&__wrapper {
 		text-align: center;
 	}

@@ -1,6 +1,11 @@
 $(document).ready(function() {
 
-	AOS.init();
+	AOS.init({
+		disable: function() {
+			var maxWidth= 1024;
+			return window.innerWidth < maxWidth;
+		}
+	});
 
 	$('.c-slider').slick({
 		arrows: true,
@@ -13,6 +18,21 @@ $(document).ready(function() {
 				settings: {
 					slidesToShow: 3,
 					slidesToScroll: 3
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false
 				}
 			}
 		]
@@ -47,14 +67,19 @@ $(document).ready(function() {
 		parallaxMouseMove(event, '.c-hero__parallax-img--4', 150);
 	});
 
+	if($(window).width() < 1024) {
+		$(window).off("mousemove");
+	}
+
 	function move() {
     var progress = $('.c-about__progress-grayback'),
-    		perc = $('.c-about__progress-perc'); 
+    		perc = $('.c-about__progress-perc'),
+    		max = $('.c-about__progress-wrapper').data('perc');
     var left = 0;
     var id = setInterval(frame, 10);
     
     function frame() {
-      if (left >= 95) {
+      if (left >= max) {
           clearInterval(id);
       } else {
           left++;
@@ -62,11 +87,53 @@ $(document).ready(function() {
           perc.text(left + '%');
       }
     }
+	};
+
+	var whichTransitionEvent = function(){
+	  var t;
+	  var el = document.createElement('fakeelement');
+	  var transitions = {
+			'transition':'transitionend',
+			'OTransition':'oTransitionEnd',
+			'MozTransition':'transitionend',
+			'WebkitTransition':'webkitTransitionEnd'
+	  };
+
+	  for(t in transitions){
+			if( el.style[t] !== undefined ){
+			  return transitions[t];
+			}
+	  }
+	};
+
+	var transitionEvent = whichTransitionEvent();
+
+	if(transitionEvent){
+		// Set-up transition-start custom event
+		if (window.CustomEvent) {
+		  var transitionStartEvent = new CustomEvent('transition-start',{'bubbles': true, 'cancelable': true});
+		  var transitionEndEvent = new CustomEvent('transition-end',{'bubbles': true, 'cancelable': true});
+		} else {
+		  var transitionStartEvent = document.createEvent('CustomEvent');
+		  var transitionEndEvent = document.createEvent('CustomEvent');
+		  transitionStartEvent.initCustomEvent('transition-start', true, true);
+		  transitionEndEvent.initCustomEvent('transition-end', true, true);
+		}
+		document.body.addEventListener(transitionEvent, function(event) {
+			// Guard detect and trigger transition start here
+	    var target = event.target || event.srcElement;
+	    console.log(event.elapsedTime);
+	    // FF does not report the exact time here.
+			if(event.elapsedTime <= 0.00001){
+				event.target.dispatchEvent(transitionStartEvent);
+			} else {
+				event.target.dispatchEvent(transitionEndEvent);
+			}
+		});
 	}
 
-	$('.c-about__progress-wrapper')[0].addEventListener('transitionend', function(e) {
-			if(e.propertyName === 'opacity') {
-				move();
-			}
-		})
+	$('.c-about__progress-wrapper').on('transition-end', function() {
+		move();
+	});
+
 });

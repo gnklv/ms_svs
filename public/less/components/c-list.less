@@ -1,4 +1,5 @@
 .c-list {
+	text-align: left;
 
 	&__item {
 		position: relative;
@@ -19,6 +20,23 @@
 
 			&::before {
 				top: 10px;
+			}
+		}
+	}
+
+	&-ol {
+		counter-reset: my-counter;
+
+		&__item {
+			position: relative;
+			margin-bottom: 10px;
+
+			&::before {
+				content: counter(my-counter)')';
+				display: inline-block;
+				vertical-align: top;
+				width: 25px;
+				counter-increment: my-counter;
 			}
 		}
 	}
