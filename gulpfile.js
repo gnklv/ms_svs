@@ -91,6 +91,19 @@ gulp.task('compress', () => {
     .pipe(gulp.dest('public/javascripts/'));
 });
 
+
+gulp.task('compressLib', () => {
+  return gulp.src([
+      'public/javascripts/lib/aos.js',
+      'public/javascripts/lib/slick.min.js',
+      'public/javascripts/lib/lodash.min.js',
+      'public/javascripts/lib/*.js'
+    ])
+    .pipe(uglify())
+    .pipe(concat('lib.min.js'))
+    .pipe(gulp.dest('public/javascripts/'));
+});
+
 gulp.task('sprites', () => {
 
   let spriteData = gulp.src('public/__icons/*.png').pipe(spritesmith({

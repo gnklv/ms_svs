@@ -5,12 +5,13 @@
 		position: relative;
 		margin-bottom: 10px;
 		padding-left: 25px;
+		list-style: none;
 
 		&::before {
 			content: '';
 			position: absolute;
-			left: 0;
-			top: 11px;
+			left: 0px;
+			top: 10px;
 			.circle(5px);
 			background-color: @color-bg;
 		}
@@ -22,6 +23,9 @@
 				top: 10px;
 			}
 		}
+	}
+	li{
+		padding: 0 0 0 25px !important;
 	}
 
 	&-ol {

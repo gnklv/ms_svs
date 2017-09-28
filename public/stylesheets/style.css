@@ -1524,7 +1524,7 @@ body {
   bottom: 0;
   background-image: linear-gradient(to right, transparent 0%, transparent 75%, #dbf3ff 75%, #dbf3ff 100%);
   background-size: 6px 100%;
-  /* РЁРёСЂРёРЅР° РґРµР»РµРЅРёСЏ = 6px / 2 = 3px */
+  /* Ширина деления = 6px / 2 = 3px */
 }
 .c-about__progress-grayback {
   position: relative;
