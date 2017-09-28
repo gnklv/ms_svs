@@ -7,7 +7,7 @@
 			"widthLogo": "102",
 			"heightLogo": "45",
 			"title": "Dodo Pizza",
-			"text": "Главный продукт компании&nbsp;&mdash; франшиза, ядром которой является собственная информационная система Dodo&nbsp;IS, расположенная в&nbsp;облаке Microsoft Azure."
+			"text": "Главный продукт компании&nbsp;&#8212; франшиза, ядром которой является собственная информационная система Dodo&nbsp;IS, расположенная в&nbsp;облаке Microsoft Azure."
 		},
 		{
 			"bgVideo": "azure-bg.jpg",
@@ -42,7 +42,7 @@
 			"logo": "element-logo.png",
 			"widthLogo": "152",
 			"heightLogo": "56",
-			"title": "&laquo;Элемент&raquo;",
+			"title": "&#171;Элемент&#187;",
 			"text": "Контроль технического состояния, дистационное управление, умное страхование, защита автомобиля от&nbsp;угона и&nbsp;многое другое доступно водителям."
 		}
 	],
@@ -76,7 +76,7 @@
 			"widthLogo": "105",
 			"heightLogo": "104",
 			"title": "Internet of&nbsp;Things",
-			"text": "Удобные инструменты для подключения &laquo;умных&raquo; устройств, безопасной передачи и&nbsp;обработки данных.",
+			"text": "Удобные инструменты для подключения &#171;умных&#187; устройств, безопасной передачи и&nbsp;обработки данных.",
 			"linkHref": "https://azure.microsoft.com/ru-ru/solutions/internet-of-things/ "
 		},
 		{
@@ -123,7 +123,7 @@
 		},
 		{
 			"heading": "Тиражируемого решения нет, но&nbsp;мы&nbsp;хотим сотрудничать с&nbsp;Microsoft в&nbsp;сфере облачных технологий. Что делать?",
-			"content": "<p class='c-accordion__text'>Заполните <a download href='https://msbusiness.blob.core.windows.net/isvs/Microsoft%20Partner%20Pitch%20Deck%20PPT%20-%20Template.pptx'>презентацию</a> и&nbsp;напишите нам. Мы&nbsp;постараемся предложить Вам интересные варианты сотрудничества.</p>"
+			"content": "<p class='c-accordion__text'>Заполните <a href='https://msbusiness.blob.core.windows.net/isvs/Microsoft%20Partner%20Pitch%20Deck%20PPT%20-%20Template.pptx'>презентацию</a> и&nbsp;напишите нам. Мы&nbsp;постараемся предложить Вам интересные варианты сотрудничества.</p>"
 		},
 		{
 			"heading": "Где можно узнать какие сервисы доступны на&nbsp;платформе Microsoft Azure?",
@@ -133,7 +133,7 @@
 			"content": "<p class='c-accordion__text'>Создайте бесплатную учетную запись, получите 12500 руб. Azure credits и используйте платные и бесплатные сервисы облачной платформы. <a href='https://azure.microsoft.com/ru-ru/free/'>Попробовать</a>.</p>"
 		},
 		{
-			"heading": "Наша компания&nbsp;&mdash; стартап. Есть&nbsp;ли специальные условия?",
+			"heading": "Наша компания&nbsp;&#8212; стартап. Есть&nbsp;ли специальные условия?",
 			"content": "<p class='c-accordion__text'>Да, Вы&nbsp;можете получить бесплатный доступ к&nbsp;новейшим технологиям и&nbsp;экспертной поддержке. Лучшие решения смогут привлечь внимание к&nbsp;своему проекту и&nbsp;выйти на&nbsp;новые рынки. <a href='https://www.microsoft.com/ru-ru/ms-start/bizspark.aspx'>Подробнее о&nbsp;программе знайте здесь</a>.</p>"
 		}
 	],
