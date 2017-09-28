@@ -1,3 +1,8 @@
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -1020,6 +1025,8 @@ body {
 }
 .c-btn:hover,
 .c-btn:focus {
+  color: #fff;
+  text-decoration: none;
   background-color: #669201;
 }
 .c-btn__wrapper {
@@ -1556,6 +1563,8 @@ body {
 }
 .c-about__icon {
   margin-right: 27px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 @media screen and (max-width: 767px) {
   .c-about__icon {
