@@ -1,0 +1,565 @@
+{% extends layout %}
+{% block content %}
+	
+	<main class="c-content">
+		
+		<section class="c-hero">
+			<img class="c-hero__parallax-img c-hero__parallax-img--1" src="{{ 'hero-img-1.png' | cdn }}" alt="" data-aos="fade-in">
+			<img class="c-hero__parallax-img c-hero__parallax-img--2" src="{{ 'hero-img-2.png' | cdn }}" alt="" data-aos="fade-in">
+			<img class="c-hero__parallax-img c-hero__parallax-img--3" src="{{ 'hero-img-3.png' | cdn }}" alt="" data-aos="fade-in">
+			<img class="c-hero__parallax-img c-hero__parallax-img--4" src="{{ 'hero-img-4.png' | cdn }}" alt="" data-aos="fade-in">
+			<div class="l-container">
+				<h1 class="c-hero__title">
+					Accelerate your business
+				</h1>
+				<p class="c-hero__text">
+					Do&nbsp; you want to&nbsp;grow your business. We&nbsp;know how. <br>
+					Apply to&nbsp;Microsoft Acceleration Program for ISVs now.
+				</p>
+			</div>
+		</section>
+		
+		<section class="l-section l-section--white c-about">
+			<div class="l-container">
+				<h2 class="c-title">
+					About Microsoft Acceleration Program for ISVs
+				</h2>
+				<div class="c-about__row">
+					<div class="c-about__col c-about__col--left">
+						<div class="c-about__bg">
+							<img src="{{ 'about-bg.png' | cdn }}" alt="">
+							<div class="c-about__progress-wrapper" data-aos="zoom-in" data-perc="95">
+								<div class="c-about__progress">
+									<div class="c-about__progress-grayback"></div>
+									<div class="c-about__progress-strips"></div>
+								</div>
+								<span class="c-about__progress-perc"></span>	
+							</div>
+						</div>
+						<div class="c-btn__wrapper">
+							<a class="c-btn c-btn--lg" href="https://events.techdays.ru/ISVs/2017-09/" onclick="fbq('track', 'Lead')" target="_blank">Apply now</a>
+						</div>
+					</div>
+					<div class="c-about__col c-about__col--right">
+						<ul class="c-about__list">
+							<li class="c-about__item l-flex l-flex__ai-start" data-aos="fade-left" data-aos-delay="0">
+								<div class="c-about__icon" data-aos="zoom-in" data-aos-delay="300">
+									<img src="{{ 'about-icon-1.png' | cdn }}" width="84" height="71" style="width: 84px; height: 71px;" alt="">
+								</div>
+								<div class="c-about__content">
+									<p class="c-about__title">
+										Technical support
+									</p>
+									<p class="c-about__text">
+										Our certified architects and engineers will help you configure or&nbsp;migrate apps or&nbsp;services to&nbsp;Microsoft cloud technologies.
+									</p>	
+								</div>
+							</li>
+							<li class="c-about__item l-flex l-flex__ai-start" data-aos="fade-left" data-aos-delay="100">
+								<div class="c-about__icon" data-aos="zoom-in" data-aos-delay="400">
+									<img src="{{ 'about-icon-2.png' | cdn }}" width="84" height="73" style="width: 84px; height: 73px;" alt="">
+								</div>
+								<div class="c-about__content">
+									<p class="c-about__title">
+										Market-making resources
+									</p>
+									<ul class="c-list">
+										<li class="c-list__item">
+											<p class="c-about__text">
+												Go-to-Market (GTM) resources for promotion of&nbsp;your apps or&nbsp;services;
+											</p>
+										</li>
+										<li class="c-list__item">
+											<p class="c-about__text">
+												Bringing your apps or&nbsp;services to&nbsp;a&nbsp;new market;
+											</p>
+										</li>
+										<li class="c-list__item">
+											<p class="c-about__text">
+												PR&nbsp;cases and case studies with vast reach;
+											</p>
+										</li>
+										<li class="c-list__item">
+											<p class="c-about__text">
+												Arranging your participation in&nbsp;industrial events
+											</p>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="c-about__item l-flex l-flex__ai-start" data-aos="fade-left" data-aos-delay="200">
+								<div class="c-about__icon" data-aos="zoom-in" data-aos-delay="500">
+									<img src="{{ 'about-icon-3.png' | cdn }}" width="84" height="69" style="width: 84px; height: 69px;" alt="">
+								</div>
+								<div class="c-about__content">
+									<p class="c-about__title">
+										Sell-with Microsoft resources (Co-selling resources)
+									</p>
+									<p class="c-about__text">
+										We&nbsp;can include your app or&nbsp;services to&nbsp;our sales portfolio and sell it&nbsp;to&nbsp;our own customers. We&nbsp;include best apps and services on&nbsp;Microsoft cloud technologies to&nbsp;Microsoft Partners Catalogue&nbsp;&mdash; a&nbsp;global tool for our sales force. Get more customers worldwide with Microsoft.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="l-section l-section--blue c-results">
+			<div class="l-container">
+				<div class="c-results__content">
+					<h2 class="c-title">
+						Enrich and expand your app business
+					</h2>
+					{# <p class="c-subtitle">
+						In&nbsp;the last year:
+					</p> #}
+				</div>
+				{# <div class="l-row">
+					<div class="l-col--md-3 l-col--sm-6 c-results__item" data-aos="fade-up" data-aos-delay="0">
+						<div class="c-results__icon" data-aos="zoom-in" data-aos-delay="300">
+							<img src="{{ 'results-icon-1.png' | cdn }}" width="86" height="86" alt="">
+						</div>
+						<p class="c-results__title">
+							Deals
+						</p>
+						<p class="c-results__text">
+							Partners secured more than 250&nbsp;deals.
+						</p>
+					</div>
+					<div class="l-col--md-3 l-col--sm-6 c-results__item" data-aos="fade-up" data-aos-delay="100">
+						<div class="c-results__icon" data-aos="zoom-in" data-aos-delay="400">
+							<img src="{{ 'results-icon-2.png' | cdn }}" width="86" height="86" alt="">
+						</div>
+						<p class="c-results__title">
+							Campaigns
+						</p>
+						<p class="c-results__text">
+							Over 20&nbsp;joint marketing campaigns to&nbsp;promote partner solutions were conducted.
+						</p>
+					</div>
+					<div class="l-col--md-3 l-col--sm-6 c-results__item" data-aos="fade-up" data-aos-delay="200">
+						<div class="c-results__icon" data-aos="zoom-in" data-aos-delay="500">
+							<img src="{{ 'results-icon-3.png' | cdn }}" width="86" height="86" alt="">
+						</div>
+						<p class="c-results__title">
+							Engagement
+						</p>
+						<p class="c-results__text">
+							Partners participated in&nbsp;more than 10&nbsp;industry events.
+						</p>
+					</div>
+					<div class="l-col--md-3 l-col--sm-6 c-results__item" data-aos="fade-up" data-aos-delay="300">
+						<div class="c-results__icon" data-aos="zoom-in" data-aos-delay="600">
+							<img src="{{ 'results-icon-4.png' | cdn }}" width="86" height="86" alt="">
+						</div>
+						<p class="c-results__title">
+							Advertising
+						</p>
+						<p class="c-results__text">
+							Partner solutions were included in&nbsp;publicity campaigns on&nbsp;platforms with a&nbsp;total audience of&nbsp;over 7&nbsp;million people.<br>
+							<span>Meduza, CNews, Vedomosti, RBC, BusinessFM, etc.</span>
+						</p>
+					</div>
+				</div> #}
+			</div>
+		</section>
+		
+		<section class="l-section l-section--white c-stories" style="background-color: #f6f6f6;">
+			<div class="l-container">
+				<h2 class="c-title">Success stories</h2>
+				{# <div class="c-slider__wrapper">
+					<div class="c-slider">
+						{%- for item in indexeng.stories %}
+						<div class="c-slider__item">
+							<a href="{{ item.linkVideo }}" class="c-slider__video" style="background-image: url({{ item.bgVideo | cdn }})" target="_blank">
+								<span></span>
+							</a>
+							<div class="c-slider__logo l-flex">
+								<img src="{{ item.logo | cdn }}" width="{{ item.widthLogo }}" height="{{ item.heightLogo }}" style="width: {{ item.widthLogo }}px; height: {{ item.heightLogo }}px" alt="">
+							</div>
+							<div class="c-slider__content">
+								<p class="c-slider__title">
+									{{ item.title | safe }}
+								</p>
+								<p class="c-slider__text">
+									{{ item.text | safe }}
+								</p>
+							</div>
+						</div>
+						{%- endfor %}
+						<div class="c-slider__item c-slider__item-plus">
+							<div class="c-slider__video"></div>
+							<div class="c-slider__logo"></div>
+							<div class="c-slider__content"></div>
+							<a class="c-slider__plus" href="https://events.techdays.ru/ISVs/2017-09/" target="_blank"></a>
+						</div>
+					</div>
+				</div> #}
+				{# <div class="c-btn__wrapper">
+					<a class="c-btn" href="https://events.techdays.ru/ISVs/2017-09/" target="_blank" onclick="fbq('track', 'Lead')">
+						Submit request
+					</a>
+				</div> #}
+			</div>
+		</section>
+		
+		<section class="l-section l-section--blue c-scenaries">
+			<div class="l-container">
+				<h2 class="c-title">Key scenarios</h2>
+				<div class="c-slider__wrapper">
+					<div class="c-slider">
+						{%- for item in indexeng.scenaries %}
+						<div class="c-slider__item">
+							<div class="c-slider__logo l-flex">
+								<img src="{{ item.logo | cdn }}" width="{{ item.widthLogo }}" height="{{ item.heightLogo }}" style="width: {{ item.widthLogo }}px; height: {{ item.heightLogo }}px" alt="">
+							</div>
+							<div class="c-slider__content">
+								<p class="c-slider__title">
+									{{ item.title | safe }}
+								</p>
+								<p class="c-slider__text">
+									{{ item.text | safe }}
+								</p>
+							</div>
+							<a class="c-btn c-btn--sm" href="{{ item.linkHref }}" target="_blank">
+								Learn more
+							</a>
+						</div>
+						{%- endfor %}
+					</div>
+				</div>
+				<div class="l-row">
+					<div class="l-col--md-6">
+						<div class="c-scenaries__item l-flex">
+							<div class="c-scenaries__img-wrapper">
+								<img class="c-scenaries__img" src="{{ 'scenaries-icon-1.png' | cdn }}" style="width: {{ item.widthLogo }}px; height: {{ item.heightLogo }}px" alt="">
+							</div>
+							<p class="c-scenaries__text">
+								See all the possible scenarios&nbsp;on&nbsp;
+								<a href="http://azureplatform.azurewebsites.net/en-us/" target="_blank">Microsoft Azure interactive chart</a>
+							</p>
+						</div>
+					</div>
+					<div class="l-col--md-6">
+						<div class="c-scenaries__item l-flex">
+							<div class="c-scenaries__img-wrapper">
+								<img class="c-scenaries__img" src="{{ 'scenaries-icon-2.png' | cdn }}" style="width: {{ item.widthLogo }}px; height: {{ item.heightLogo }}px" alt="">
+							</div>
+							<p class="c-scenaries__text">
+								Need technical documentation?<br>
+								<a href="https://docs.microsoft.com/en-us/azure/" target="_blank">See here</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="l-section l-section--white">
+			<div class="l-container">
+				<h2 class="c-title">FAQ</h2>
+				<div class="c-accordion">
+					{%- for item in indexeng.accordion %}
+					<div class="c-accordion__item">
+						<button class="c-accordion__heading">
+							<span class="c-accordion__icon"></span>
+							{{ item.heading | safe }}
+						</button>
+						<div class="c-accordion__content">
+							{{ item.content | safe }}
+						</div>
+					</div>
+					{%- endfor %}
+					<div class="c-accordion__item">
+						<button class="c-accordion__heading">
+							<span class="c-accordion__icon"></span>
+							What are the pricing details for Microsoft Azure?
+						</button>
+						<div class="c-accordion__content c-table__wrapper">
+							<p class="c-accordion__text">
+								For your convenience, we have put all Microsoft Azure pricing details into a visual table so that you can choose the right one for you.
+							</p>
+							<table class="c-table">
+								<thead>
+									<tr>
+										<td>
+											Azure pricing
+										</td>
+										<td>
+											Pay-as-you-go on&nbsp;the microsoft.com
+										</td>
+										<td>
+											Enterprise Agreement
+										</td>
+										<td>
+											Open License Agreement
+										</td>
+										<td>
+											CSP (agreement with Cloud service provider)
+										</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											Payment type
+										</td>
+										<td>
+											Postpayment
+										</td>
+										<td>
+											In-Advance payment 
+											<span>annual subscription</span>
+										</td>
+										<td>
+											In-Advance payment
+											<span>purchase of Open license keys</span>
+										</td>
+										<td>
+											Postpayment
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Payment method
+										</td>
+										<td>
+											Credit card
+										</td>
+										<td>
+											Invoice
+										</td>
+										<td>
+											Invoice
+										</td>
+										<td>
+											Invoice
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Terms of contract
+										</td>
+										<td>
+											Monthly payment
+										</td>
+										<td>
+											Three-year contract
+											<span>annual review</span>
+										</td>
+										<td>
+											12 months
+											<span>starting upon key activation</span>
+										</td>
+										<td>
+											Monthly payment
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Fixed price
+										</td>
+										<td class="c-table__td-icon">
+											No
+											<span class="c-table__icon c-table__icon--false"></span>
+										</td>
+										<td class="c-table__td-icon">
+											Yes, in three years
+											<span class="c-table__icon c-table__icon--true"></span>
+										</td>
+										<td class="c-table__td-icon">
+											No
+											<span class="c-table__icon c-table__icon--false"></span>
+										</td>
+										<td class="c-table__td-icon">
+											No
+											<span class="c-table__icon c-table__icon--false"></span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Services availability services
+										</td>
+										<td class="c-table__td-icon">
+											All
+											<span class="c-table__icon c-table__icon--true"></span>
+										</td>
+										<td class="c-table__td-icon">
+											All
+											<span class="c-table__icon c-table__icon--true"></span>
+										</td>
+										<td class="c-table__td-icon">
+											All
+											<span class="c-table__icon c-table__icon--true"></span>
+										</td>
+										<td>
+											Check with the partner providers
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Discount programme
+										</td>
+										<td class="c-table__td-icon">
+											No
+											<span class="c-table__icon c-table__icon--false"></span>
+										</td>
+										<td class="c-table__td-icon">
+											Yes
+											<span class="c-table__icon c-table__icon--true"></span>
+										</td>
+										<td class="c-table__td-icon">
+											No
+											<span class="c-table__icon c-table__icon--false"></span>
+										</td>
+										<td class="c-table__td-icon">
+											Yes
+											<span class="c-table__icon c-table__icon--true"></span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Minimum contract price
+										</td>
+										<td class="c-table__td-icon">
+											No
+											<span class="c-table__icon c-table__icon--false"></span>
+										</td>
+										<td class="c-table__td-icon">
+											$12&nbsp;000&nbsp;per year
+											<span class="c-table__icon c-table__icon--true"></span>
+										</td>
+										<td class="c-table__td-icon">
+											$100
+											<span class="c-table__icon c-table__icon--true"></span>
+										</td>
+										<td class="c-table__td-icon">
+											No
+											<span class="c-table__icon c-table__icon--false"></span>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Technical support  
+											<span>
+												In addition to the services included in the subscription
+												<a href="#">Find out more here</a>
+											</span>
+										</td>
+										<td>
+											Purchase of online support plan
+										</td>
+										<td>
+											Purchase of support plan from partner 
+											<span>included in the agreement</span>
+										</td>
+										<td>
+											Purchase of online support
+										</td>
+										<td>
+											Support from service provider
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Benefits
+										</td>
+										<td>
+											Quick registration on the site
+										</td>
+										<td>
+											Special promo, dedicated account
+										</td>
+										<td>
+											Purchase keys from a&nbsp;supplier, providing you with licences for other&nbsp;IT products
+										</td>
+										<td>
+											Service providers offer advice on&nbsp;solution architecture and help with migration and development as&nbsp;well as&nbsp;promoting solutions
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Cost calculation
+										</td>
+										<td>
+											<a href="https://azure.microsoft.com/en-us/pricing/calculator/" target="_blank">Price calculator</a>
+										</td>
+										<td>
+											<a href="https://www.microsoft.com/en-us/solution-providers/search" target="_blank">Contact partner</a>
+										</td>
+										<td>
+											<a href="https://www.microsoft.com/en-us/solution-providers/search" target="_blank">Contact provider</a>
+										</td>
+										<td>
+											<a href="https://partnercenter.microsoft.com/en-us/partner/find-a-provider" target="_blank">Find a provider</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<div class="c-table-mob">
+								{%- for item in index.table  %}
+								<div class="c-table-mob__item">
+									<div class="c-table-mob__row-head">
+										<p class="c-table-mob__col-name">Azure pricing</p>
+										<p class="c-table-mob__col-value">{{ item.title | safe }}</p>
+									</div>
+									<div class="c-table-mob__row">
+										<p class="c-table-mob__col-name">Payment type</p>
+										<p class="c-table-mob__col-value">{{ item.type | safe }}</p>
+									</div>
+									<div class="c-table-mob__row">
+										<p class="c-table-mob__col-name">Payment method</p>
+										<p class="c-table-mob__col-value">{{ item.method | safe }}</p>
+									</div>
+									<div class="c-table-mob__row">
+										<p class="c-table-mob__col-name">Terms of contract</p>
+										<p class="c-table-mob__col-value">{{ item.date | safe }}</p>
+									</div>
+									<div class="c-table-mob__row">
+										<p class="c-table-mob__col-name">Fixed price</p>
+										<p class="c-table-mob__col-value c-table__td-icon">{{ item.fixation | safe }}</p>
+									</div>
+									<div class="c-table-mob__row">
+										<p class="c-table-mob__col-name">Services availability services</p>
+										<p class="c-table-mob__col-value c-table__td-icon">{{ item.availability | safe }}</p>
+									</div>
+									<div class="c-table-mob__row">
+										<p class="c-table-mob__col-name">Discount programme</p>
+										<p class="c-table-mob__col-value c-table__td-icon">{{ item.programm | safe }}</p>
+									</div>
+									<div class="c-table-mob__row">
+										<p class="c-table-mob__col-name">Minimum contract price</p>
+										<p class="c-table-mob__col-value c-table__td-icon">{{ item.cost | safe }}</p>
+									</div>
+									<div class="c-table-mob__row">
+										<p class="c-table-mob__col-name">Technical support <span>In addition to the services included in the subscription<a href="#">Find out more here</a></span></p>
+										<p class="c-table-mob__col-value">{{ item.support | safe }}</p>
+									</div>
+									<div class="c-table-mob__row">
+										<p class="c-table-mob__col-name">Benefits</p>
+										<p class="c-table-mob__col-value">{{ item.features | safe }}</p>
+									</div>
+									<div class="c-table-mob__row">
+										<p class="c-table-mob__col-name">Cost calculation</p>
+										<p class="c-table-mob__col-value">{{ item.calc | safe }}</p>
+									</div>
+								</div>
+								{%- endfor %}
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="c-btn__wrapper">
+					<a class="c-btn" href="https://events.techdays.ru/ISVs/2017-09/" target="_blank" onclick="fbq('track', 'Lead')">
+						Submit request
+					</a>
+				</div>
+			</div>
+		</section>
+
+		
+	</main>
+
+{% endblock %}

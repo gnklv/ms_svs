@@ -119,7 +119,7 @@
 		},
 		{
 			"heading": "Нужно&nbsp;ли подписывать договор о&nbsp;сотрудничестве?",
-			"content": "<p class='c-accordion__text'>Мы&nbsp;стремимся избавить наших партнеров от&nbsp;лишней бумажной работы. Важна Ваша готовность использовать в&nbsp;решении облачные сервисы Microsoft Azure.</p>"
+			"content": "<p class='c-accordion__text'>Мы&nbsp;стремимся избавить наших партнеров от&nbsp;лишней бумажной работы. Важна Ваша готовность использовать в&nbsp;решении облачные сервисы Microsoft Azure. Небольшая формальность все-таки необходима&nbsp;&mdash; мы&nbsp;попросим Вас <a href='https://partner.microsoft.com/ru-ru/membership' target='_blank'>зарегистрироваться в&nbsp;партнерской программе Microsoft Partner Network</a>. Это займет 5-10 минут и&nbsp;совершенно бесплатно. Узнать о&nbsp;преимуществах участия в&nbsp;программе и&nbsp;сравнить уровни можно <a href='https://partner.microsoft.com/ru-ru/membership/core-benefits' target='_blank'>здесь</a>.</p>"
 		},
 		{
 			"heading": "Тиражируемого решения нет, но&nbsp;мы&nbsp;хотим сотрудничать с&nbsp;Microsoft в&nbsp;сфере облачных технологий. Что делать?",
@@ -127,7 +127,8 @@
 		},
 		{
 			"heading": "Где можно узнать какие сервисы доступны на&nbsp;платформе Microsoft Azure?",
-			"content": "<p class='c-accordion__text'>Посмотреть все возможные сценарии Вы можете на <a href='http://azureplatform.azurewebsites.net/en-us/'>интерактивной карте Microsoft Azure</a>. Техническая документация представлена <a href='https://docs.microsoft.com/ru-ru/azure/#pivot=services'>здесь</a></p>"},
+			"content": "<ul class='c-list'><li class='c-list__item'><p class='c-accordion__text'>Посмотрите все возможные сценарии <a href='http://azureinteractives.azurewebsites.net/' target='_blank'>на интерактивной карте Microsoft Azure</a>;</p></li><li class='c-list__item'><p class='c-accordion__text'>Изучите <a href='https://docs.microsoft.com/ru-ru/azure/#pivot=services' target='_blank'>техническую документацию</a>;</p></li><li class='c-list__item'><p class='c-accordion__text'>Посмотрите примеры использования Microsoft Azure в <a href='https://habrahabr.ru/article/327324/' target='_blank'>реальных российских проектах</a>;</p></li><li class='c-list__item'><p class='c-accordion__text'> Посетите наши <a href='http://mswebinars.ru/past' target='_blank'>онлайн мероприятия</a>;</p></li></ul>"
+		},
 		{
 			"heading": "Как я&nbsp;могу познакомиться с&nbsp;платформой?",
 			"content": "<p class='c-accordion__text'>Создайте бесплатную учетную запись, получите 12500 руб. Azure credits и используйте платные и бесплатные сервисы облачной платформы. <a href='https://azure.microsoft.com/ru-ru/free/'>Попробовать</a>.</p>"

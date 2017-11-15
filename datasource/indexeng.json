@@ -1,0 +1,195 @@
+{
+	"stories": [
+		{
+			"bgVideo": "dodo-bg.jpg",
+			"linkVideo": "https://www.youtube.com/watch?v=-z8q-UjyBX0",
+			"logo": "dodo-logo.png",
+			"widthLogo": "102",
+			"heightLogo": "45",
+			"title": "Dodo Pizza",
+			"text": "The company&rsquo;s main product is&nbsp;a&nbsp;franchise, the core of&nbsp;which is&nbsp;its proprietary information system, Dodo&nbsp;IS, hosted in&nbsp;the Microsoft Azure cloud."
+		},
+		{
+			"bgVideo": "azure-bg.jpg",
+			"linkVideo": "https://www.youtube.com/watch?v=0M3AIir57O8",
+			"logo": "azure-logo.png",
+			"widthLogo": "138",
+			"heightLogo": "17",
+			"title": "Iceberg",
+			"text": "The Russian iceberg.hockey analytics system, implemented on&nbsp;the Microsoft Azure platform, makes managing hockey clubs more efficient."
+		},
+		{
+			"bgVideo": "websoft-bg.jpg",
+			"linkVideo": "https://www.youtube.com/watch?v=Xs35wNeLJPA",
+			"logo": "websoft-logo.png",
+			"widthLogo": "86",
+			"heightLogo": "36",
+			"title": "Websoft",
+			"text": "How can you relieve the burden of&nbsp;HR? Which processes simply require automation? Why spend time on&nbsp;tasks which can be&nbsp;solved on&nbsp;their own using WebTutor?"
+		},
+		{
+			"bgVideo": "bright-box-bg.jpg",
+			"linkVideo": "https://www.youtube.com/watch?v=CcyygYJGhZ4",
+			"logo": "bright-box-logo.png",
+			"widthLogo": "121",
+			"heightLogo": "34",
+			"title": "Remoto",
+			"text": "Drivers have found a&nbsp;great solution for remote starting their cars, and are also able to&nbsp;find their vehicles at&nbsp;the supermarket."
+		},
+		{
+			"bgVideo": "element-bg.jpg",
+			"linkVideo": "https://www.youtube.com/watch?v=vPDfTLVMW6c",
+			"logo": "element-logo.png",
+			"widthLogo": "152",
+			"heightLogo": "56",
+			"title": "&#171;Element&#187;",
+			"text": "Maintenance monitoring, remote control, smart insurance, anti-theft protection and much more is&nbsp;available to&nbsp;drivers."
+		}
+	],
+	"scenaries": [
+		{
+			"logo": "analytics-bg.png",
+			"widthLogo": "110",
+			"heightLogo": "104",
+			"title": "Business Analytics",
+			"text": "Microsoft modern business analytics services for creating&nbsp;IT solutions to&nbsp;collect, process, analyse and visualise data.",
+			"linkHref": "https://azure.microsoft.com/en-us/solutions/business-intelligence/ "
+		},
+		{
+			"logo": "intelligence-bg.png",
+			"widthLogo": "150",
+			"heightLogo": "89",
+			"title": "Artifical Intelligence",
+			"text": "Use artificial intelligence algorithms to recognise and analyse images, videos and speech in your applications on different platforms (Windows, iOS, Android)",
+			"linkHref": "https://azure.microsoft.com/en-us/services/cognitive-services/ "
+		},
+		{
+			"logo": "bigdata-bg.png",
+			"widthLogo": "142",
+			"heightLogo": "103",
+			"title": "Big Data",
+			"text": "Scalable services for storing and analysing large volumes of&nbsp;data using machine learning and the Hadoop, Spark and Data Lake Analytics tools",
+			"linkHref": "https://azure.microsoft.com/en-us/solutions/big-data/"
+		},
+		{
+			"logo": "iot-bg.png",
+			"widthLogo": "105",
+			"heightLogo": "104",
+			"title": "Internet of&nbsp;Things",
+			"text": "Practical tools for connecting smart devices and securely transmitting and processing data.",
+			"linkHref": "https://azure.microsoft.com/en-us/solutions/internet-of-things/ "
+		},
+		{
+			"logo": "vm-bg.png",
+			"widthLogo": "128",
+			"heightLogo": "102",
+			"title": "High Performance Computing",
+			"text": "Unlimited resources for scaling tasks related to&nbsp;high performance computing, such as&nbsp;big data analysis, simulation, financial modelling and many more.",
+			"linkHref": "https://azure.microsoft.com/en-us/solutions/high-performance-computing/ "
+		},
+		{
+			"logo": "microservices-bg.png",
+			"widthLogo": "137",
+			"heightLogo": "101",
+			"title": "Microservice architecture",
+			"text": "Tools for solutions using microservice architecture. Create scalable and manageable applications using Azure Service Fabric and Azure Container Services open source orchestrators.",
+			"linkHref": "https://azure.microsoft.com/en-us/solutions/microservice-applications/"
+		},
+		{
+			"logo": "azure-bg.png",
+			"widthLogo": "108",
+			"heightLogo": "108",
+			"title": "Development and Testing",
+			"text": "Cross-platform tools for application development, testing, implementation and maintenance.",
+			"linkHref": "https://azure.microsoft.com/en-us/solutions/dev-test/ "
+		}
+	],
+	"accordion": [
+		{
+			"heading": "What are the benefits of the program?",
+			"content": "<ul class='c-list'><li class='c-list__item'><p class='c-accordion__text'>Technical support from certified architects and engineers;</p></li><li class='c-list__item'><p class='c-accordion__text'>Resources to promote your solutions through appropriate marketing channels;</p></li><li class='c-list__item'><p class='c-accordion__text'>Selling force to your app or service</p></li></ul>"
+		},
+		{
+			"heading": "Who can participate in&nbsp;the program?",
+			"content": "<p class='c-accordion__text'>We&nbsp;are looking for independent software vendors who are building their apps and services on&nbsp;Microsoft cloud technologies or&nbsp;who wants to&nbsp;migrate their apps and services from compete platforms to&nbsp;Microsoft cloud technologies. In&nbsp;order to&nbsp;participate in&nbsp;the program, you need to&nbsp;have a&nbsp;desire to&nbsp;accelerate your business and get more profit and customers in&nbsp;the new digital transformation reality.</p>"
+		},
+		{
+			"heading": "How can&nbsp;I apply to&nbsp;the program?",
+			"content": "<p class='c-accordion__text'>To participate in the program there are a few simple steps you’ll need to go through:</p><br><ol class='c-list-ol'><li class='c-list-ol__item c-accordion__text'>Complete the request form below;</li><li class='c-list-ol__item c-accordion__text'>We will get back to you in 2 weeks max giving our first feedback on your solution;</li><li class='c-list-ol__item c-accordion__text'>If you are qualified, we will ask you to provide additional information about your company and solution (we’ll send some questions via email or call you);</li><li class='c-list-ol__item c-accordion__text'>As a final step, you will Iintroduce Microsoft to your solution in person.</li></ol>"
+		},
+		{
+			"heading": "Do I need to sign any agreement?",
+			"content": "<p class='c-accordion__text'>We will ask you to become a<a href='https://partner.microsoft.com/en-US/membership' target='_blank'> part of our Microsoft Partner Network (MPN)</a>, which helps us to keep all our partners up-to-date with all relevant information about discounts, events and other materials. But the most important is your willingness to use Microsoft cloud technologies in your solution.</p>"
+		},
+		{
+			"heading": "We&nbsp;don&rsquo;t have an&nbsp;independent app or&nbsp;service now but we&rsquo;d like to&nbsp;cooperate with Microsoft in&nbsp;the field of&nbsp;cloud technologies. What should we&nbsp;do?",
+			"content": "<p class='c-accordion__text'>Fill in the <a href='https://msbusiness.blob.core.windows.net/isvs/Microsoft%20Partner%20Pitch%20Deck%20PPT%20-%20Template.pptx'>request form</a>. We’ll try to offer you some interesting partnership options. </p>"
+		},
+		{
+			"heading": "Where can&nbsp;I find out what services are available on&nbsp;the Microsoft Azure cloud platform?",
+			"content": "<ul class='c-list'><li class='c-list__item'><p class='c-accordion__text'>You can see all ofall the available options <a href='http://azureinteractives.azurewebsites.net/' target='_blank'>on the Microsoft Azure interactive chart</a>;</p></li><li class='c-list__item'><p class='c-accordion__text'><a href='https://docs.microsoft.com/en-us/azure/#pivot=services' target='_blank'>Technical documentation can be found here</a>;</p></li></ul>"
+		},
+		{
+			"heading": "Can I&nbsp;try Microsoft Azure for free?",
+			"content": "<p class='c-accordion__text'>Yes. Create your Azure free account today and get RUB 12,500 worth of&nbsp;$200 Azure credit.<a href='https://azure.microsoft.com/en-us/free/'>Try it</a>.</p>"
+		},
+		{
+			"heading": "I’m a start-up. Are there any special terms for me?",
+			"content": "<p class='c-accordion__text'>Yes, you can get free access to the latest technologies and also expert support.  <a href='https://bizspark.microsoft.com/en-US/My'>Apply to the program here</a>.</p>"
+		}
+	],
+	"table": [
+		{
+			"title": "Pay-As-You-Go покупка на&nbsp;сайте microsoft.com",
+			"type": "Постоплата",
+			"method": "Банковская карта",
+			"date": "Помесячная оплата",
+			"fixation": "Нет<span class='c-table__icon c-table__icon--false'></span>",
+			"availability": "Все<span class='c-table__icon c-table__icon--true'></span>",
+			"programm": "Нет<span class='c-table__icon c-table__icon--false'></span>",
+			"cost": "Нет<span class='c-table__icon c-table__icon--false'></span>",
+			"support": "Приобретение плна поддержки online",
+			"features": "Быстрое оформление на&nbsp;сайте",
+			"calc": "<a href='#'>Калькулятор цен</a>"
+		},
+		{
+			"title": "Корпоративное соглашение Enterprise Agreement",
+			"type": "Предоплата<span>годовое обязательство</span>",
+			"method": "Оплата по&nbsp;выставленному счету",
+			"date": "Трехлетний контракт<span>ежегодный пересмотр</span>",
+			"fixation": "Да, руб. на&nbsp;три года<span class='c-table__icon c-table__icon--true'></span>",
+			"availability": "Все<span class='c-table__icon c-table__icon--true'></span>",
+			"programm": "Есть<span class='c-table__icon c-table__icon--true'></span>",
+			"cost": "$12&nbsp;000&nbsp;в год<span class='c-table__icon c-table__icon--true'></span>",
+			"support": "Приобретение плана поддержки у&nbsp;партнера<span>включается в&nbsp;соглашение</span>",
+			"features": "Специальные промо, выделенный аккаунт",
+			"calc": "<a href='#'>Обратитесь к&nbsp;партнеру</a>"
+		},
+		{
+			"title": "Соглашение Open License",
+			"type": "Предоплата<span>покупка ключевой активации</span>",
+			"method": "Оплата по&nbsp;выставленному счету",
+			"date": "12 месяцев<span>с&nbsp;момента активации ключа</span>",
+			"fixation": "Нет<span class='c-table__icon c-table__icon--false'></span>",
+			"availability": "Все<span class='c-table__icon c-table__icon--true'></span>",
+			"programm": "Нет<span class='c-table__icon c-table__icon--false'></span>",
+			"cost": "$100<span class='c-table__icon c-table__icon--true'></span>",
+			"support": "Приобретение поддержки online",
+			"features": "Покупка ключей у&nbsp;поставщика, предоставляющего вам лицензии на&nbsp;другие ИТ-продукты",
+			"calc": "<a href='#'>Обратитесь к&nbsp;поставщику</a>"
+		},
+		{
+			"title": "CSP (соглашение с&nbsp;сервисным центром)",
+			"type": "Постоплата",
+			"method": "Оплата по&nbsp;выставленному счету",
+			"date": "Помесячная оплата",
+			"fixation": "Нет<span class='c-table__icon c-table__icon--false'></span>",
+			"availability": "Уточняйте у&nbsp;сервис-провайдеров",
+			"programm": "Есть<span class='c-table__icon c-table__icon--true'></span>",
+			"cost": "Нет<span class='c-table__icon c-table__icon--false'></span>",
+			"support": "Поддержка от&nbsp;сервис-провайдера",
+			"features": "Сервис-провайдеры оказывают консультации по&nbsp;архитектуре решений, помощь с&nbsp;миграцией и&nbsp;разработкой, а&nbsp;также продвижением решений",
+			"calc": "<a href='#'>Обратитесь к&nbsp;нам</a>"
+		}
+	]
+}

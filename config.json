@@ -21,6 +21,16 @@
 				"description": "Описание страницы",
 				"og": true
 			}
+		},
+		{
+			"name": "indexeng",
+			"route": "/eng",
+			"pageData": ["indexeng"],
+			"pageVars": {
+				"title": "Заголовок страницы",
+				"description": "Описание страницы",
+				"og": true
+			}
 		}
 	]
 }
